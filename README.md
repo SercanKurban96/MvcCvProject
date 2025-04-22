@@ -184,3 +184,44 @@ CSS yolları düzelmiş oldu.<br><br>
 
 <hr>
 
+# 🖥️ Bölüm 3: Vitrin Paneli
+
+## ⚙️ Hakkımda Kısmını Listeleme
+
+![image](https://github.com/user-attachments/assets/83582c2e-5321-411b-b0c9-d7992ef60449)
+<br>
+Burada index.html sayfasında yer alan menüleri türkçeleştirdik.<br><br>
+
+![image](https://github.com/user-attachments/assets/72bb4a58-e9c6-465d-80ed-a6f1c40319a2)
+<br>
+Burada en üstte using MvcCvProject.Models.Entity kütüphanesini ekliyoruz.<br> 
+Ardından DbCvEntities ile bir tane entity oluşturup ismini db olarak belirliyoruz.<br>
+Burada Index içerisinde var türünden degerler isminde bir değişken oluşturduk.<br>
+Hakkımda tablosunu listelemek için db türünden TblHakkimda tablosunu kullanarak ToList metodunu oluşturduk.<br>
+En sonda geriye değer döndürme işlemini gerçekleştirmek için içerisine degerler değişkenini eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/66957d07-9844-49c7-a27a-5abcbb3191ed)
+<br>
+Index.html sayfasına gelip Hakkımda tablosunu gösterebilmek için using kütüphanesini ve modeli ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d0beff27-c2c1-4246-b7a6-2d2c0160220e)
+<br>
+About kısmı 48. satırdan itibaren yer almaktadır. Burada işlemlerimizi gerçekleştireceğiz.<br><br>
+
+![image](https://github.com/user-attachments/assets/07713205-d4e2-462e-a8f9-fe9cc1ade977)
+<br>
+Burada bir tane foreach döngüsü oluşturuyoruz. About kısmı section etiketleri arasında bulunmaktadır. Bu nedenle foreach döngüsü oluştururken section etiketlerinin arasına süslü parantezlerimizi ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c867536f-1926-404e-a6f6-237b8932f4a8)
+<br>
+53. satırda Clarence ismi yer almaktaydı. Burada kendi adımızı görüntülemek için foreach döngüsünde oluşturduğumuz item değişkenini burada kullanıyoruz ve oluşturduğumuz Ad sütununu buraya çağırıyoruz. Programı çalıştırdığımız zaman burada Hakkımda kısmı gözükmeyecektir, çünkü veri tabanında herhangi bir veri girmedik. Bunun için verimizi girelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/d530645a-f0a2-48ad-8882-cfd72d7ded98)
+<br>
+Örnek veri girişimizi bu şekilde yaptık.<br><br>
+
+![image](https://github.com/user-attachments/assets/7fe06bc1-475b-4cfe-811a-1551ce7b82e0)
+<br>
+İsim burada çıkmış oldu.<br><br>
+
+
