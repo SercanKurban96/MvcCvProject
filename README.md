@@ -68,3 +68,15 @@ Projemizin ismini MvcCvProject olarak belirledik.<br><br>
 <br>
 Projemiz oluşturuldu.<br><br>
 
+![image](https://github.com/user-attachments/assets/ee4dadd0-baaa-48b2-ad70-cdd9c351d2cf)
+<br>
+Yeni bir Layout oluşturmak için Views klasöründe yer alan Shared klasörüne sağ tıklayıp Add kısmından View olanı seçiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e84d0d9a-44af-4cda-949b-8deba158a792)
+<br>
+Çıkan pencerede direkt Add olana tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9656d249-1ce1-4a98-9c9d-7789aa02d189)
+<br>
+İsmini _AdminLayout olarak belirledik. Bu Layout kendi başına bir Layout olacağı için aşağıda yer alan Use a layout page kısmında yer alan işareti kaldırıyoruz ve Add diyoruz.<br><br>
+
