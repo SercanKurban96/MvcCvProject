@@ -50,3 +50,21 @@ Yedinci ve son tablomuzun ismini TblAdmin olarak belirledik.<br><br>
 
 <hr>
 
+# 🖥️ Bölüm 2: Projenin Oluşturulması
+
+![mvccvproject](https://github.com/user-attachments/assets/ee43ceb9-625d-4025-b6ce-6178ed87469f)
+<br>
+Buradan ASP.NET Web Application (.NET Framework) şablonunu seçiyoruz. Sol tarafta çıkmazsa yukarıda yer alan arama çubuğundan veya alttaki seçeneklerden bulabilirsiniz.<br><br>
+
+![mvccvproject1](https://github.com/user-attachments/assets/9bc32e6a-b605-473b-945b-7ad2c74e6be8)
+<br>
+Projemizin ismini MvcCvProject olarak belirledik.<br><br>
+
+![mvccvproject2](https://github.com/user-attachments/assets/0b0c3c8b-6052-4b6b-ba6c-8dc807358630)
+<br>
+Çıkan pencerede direkt MVC seçili olarak gelecektir. Create diyoruz.<br><br>
+
+![mvccvprojectbaslangic](https://github.com/user-attachments/assets/435ed8a7-361a-4d31-8182-32c323a2bd44)
+<br>
+Projemiz oluşturuldu.<br><br>
+
