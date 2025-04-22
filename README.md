@@ -80,3 +80,107 @@ Yeni bir Layout oluşturmak için Views klasöründe yer alan Shared klasörüne
 <br>
 İsmini _AdminLayout olarak belirledik. Bu Layout kendi başına bir Layout olacağı için aşağıda yer alan Use a layout page kısmında yer alan işareti kaldırıyoruz ve Add diyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/f3eee96b-0c60-45d1-a338-a7098cc4b489)
+<br>
+Burada bir tane model oluşturacağız. İlk olarak Models klasörüne sağ tıklayıp Entity isminde yeni bir klasör oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/b964dc7e-681a-4f69-b0aa-a52007f6d5b8)
+<br>
+Ardından Entity klasörüne sağ tıklayıp Add kısmından New Item diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cafc1f0b-3016-463e-bd68-046a302df624)
+<br>
+Burada sol tarafta yer alan Data kısmını seçiyoruz ve ADO.NET Entity Data Model olanı seçtikten sonra Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5ba11bbf-0c0e-4ab2-8145-2efb366e0e4a)
+<br>
+Burada direkt Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e4374373-53e6-4441-8406-0499e65c20d9)
+<br>
+Burada en son yapmış olduğum veri tabanı çıkacaktır. Bunun için oluşturacağımız veri tabanını seçmek için New Connection diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/54c2433d-8330-4d84-af22-e8c1423d3c00)
+<br>
+Burada SQL veri tabanınızda yer alan sunucu adınızı girdikten sonra veri tabanımızı seçiyoruz ve OK diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/737b27e2-aa3e-4d14-8ef3-d57c9ba7ad7a)
+<br>
+Artık Entities oluşturma işlemine geçebiliriz. Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f80a6c46-0b2a-47f4-b6b3-b3f08cc45b6e)
+<br>
+Next diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d7bad249-991a-4b46-9251-8cf6c055b23a)
+<br>
+Buradaki tüm tabloları seçtikten sonra Finish diyoruz. Model oluşturma süreci biraz uzun olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/172f976d-b7ad-46a6-9aaa-43055803e319)
+<br>
+Modelimiz bu şekilde oluşturuldu.<br><br>
+
+## ⚙️ Temanın Projeye Eklenmesi
+
+![image](https://github.com/user-attachments/assets/d253eb07-629d-4c46-93b4-3bc0123fecad)
+<br>
+Controllers klasörüne sağ tıklayıp yeni bir Controller ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6dbc73a9-7955-4ab6-949f-9bcb9f4e3de6)
+<br>
+Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e4b7fc75-6a97-43b8-af7f-cd982ea3d601)
+<br>
+İsmini direkt DefaultController olarak belirleyip Add diyoruz. Burada istediğiniz ismi kullanabilirsiniz.<br><br>
+
+![image](https://github.com/user-attachments/assets/b120c804-130c-437f-b46b-b6eb681c188c)
+<br>
+Index'e sağ tıklayıp Add kısmından View ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/ef1985bb-304e-4e04-8f05-9d937677f3fa)
+<br>
+Burada herhangi bir Layout kullanmadan Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8c0932c7-1086-484b-8794-9bc848f0e8cf)
+<br>
+Tema linkinde yer alan şablonu indirdikten sonra bu klasörü alıp direkt katmanımıza sürüklüyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8d6c9caf-8e1a-473e-97a4-6a9e60bf8034)
+<br>
+Hazır şablonumuz burada yer aldı.<br><br>
+
+![image](https://github.com/user-attachments/assets/ff6fb8bc-06e8-4ab7-9817-47eb8da91896)
+<br>
+Şablonun içerisinde yer alan index.html sayfasına tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3a656c5f-b9ac-4e53-ae47-14921fb0a708)
+<br>
+Yaklaşık 229 satır yer almaktadır. Burayı olduğu gibi kopyalayıp kendi hazırladığımız index.html sayfasına yapıştırıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9f58126a-3e38-4e8c-9a43-fc4f15e0f87b)
+<br>
+Kendi index.html sayfamızı buraya aktarmış olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/520ddbdc-f499-4aee-b9a5-0e0cd971c06d)
+<br>
+Programı çalıştırdığımız zaman karşımıza bu şekilde CSS yolları bozuk olarak gösterecektir.<br><br>
+
+### 🧰 Düzeltilecek CSS Yolları:
+
+![image](https://github.com/user-attachments/assets/000c86be-b03f-49cd-ad30-24357451fe99)
+<br>
+Burada şablonumuzun ismini kullanarak CSS yollarını belirliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c94e2ea4-902a-4066-9e0a-9e7f3ed2a0a2)
+<br>
+
+![image](https://github.com/user-attachments/assets/417e9475-da6b-4901-99a7-a5013ccfce94)
+<br>
+
+![image](https://github.com/user-attachments/assets/cfd397d5-befc-4dd7-8582-9c5d02151696)
+<br>
+CSS yolları düzelmiş oldu.<br><br>
+
+<hr>
+
