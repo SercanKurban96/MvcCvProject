@@ -356,6 +356,24 @@ Iletisim formunu bu şekilde hazırlamış olduk.<br><br>
 ![image](https://github.com/user-attachments/assets/4828ba53-f4dc-44f7-b33d-321e1febe7f2)
 <br><br>
 
+## ⚙️ Mesaj Gönderme İşlemi
+
+![image](https://github.com/user-attachments/assets/1694e1e2-3ca4-4ff6-a6aa-b8775d10904f)
+<br>
+Burada ilk olarak HttpGet ve HttpPost metotlarını kullanıyoruz. Bu metotlar repomda yer alan MvcEducation bölümünde anlatılmıştır.<br><br>
+
+![image](https://github.com/user-attachments/assets/91f1ee9e-0c3a-4595-be7c-14b34e5645e4)
+<br>
+Iletisim partial sayfasında bir tane form oluşturup metodunu post olarak belirliyoruz. Burada input kısmında yer alan name ise veri tabanında yazdığımız sütunların aynısını buraya yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8dddfc4f-0c26-46ea-af56-24e1bf85e4a0)
+<br>
+
+![image](https://github.com/user-attachments/assets/a5e83615-960a-48d1-8825-522c766aaf6f)
+<br><br>
+
+<hr>
+
 
 
 
