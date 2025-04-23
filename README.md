@@ -337,4 +337,26 @@ Sayfamız bu şekilde hazırlanmış oldu. Diğer alanlar için de (Eğitimlerim
 
 ## ⚙️ İletişim Paneli
 
+![image](https://github.com/user-attachments/assets/2be39a2b-b732-4575-9665-5e3f1d86baec)
+<br>
+Burada Iletisim isminde bir Partial View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/0c8db60a-4c0b-4085-9cb1-e7c14d57cdfe)
+<br>
+Index.html sayfasına gelip bir tane section class üzerinden id değerini contacts olarak belirliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e9094715-ddd6-4179-a1a5-6499541435bc)
+<br>
+Contacts değerini yukarıda yer alan menüye ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/862d4a42-ab43-4af4-a952-f98ec7414229)
+<br>
+Iletisim formunu bu şekilde hazırlamış olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/4828ba53-f4dc-44f7-b33d-321e1febe7f2)
+<br><br>
+
+
+
+
 
