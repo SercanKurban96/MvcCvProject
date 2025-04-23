@@ -321,4 +321,20 @@ Deneyim.html sayfasını bu şekilde değiştirmiş olduk. Programı çalıştı
 <br>
 Sayfamız bu şekilde hazırlanmış oldu. Diğer alanlar için de (Eğitimlerim, Sertifikalarım vs...) aynı şekilde uygulanacaktır.<br><br>
 
+### Örnek Proje Görüntüleri
+
+![image](https://github.com/user-attachments/assets/81751d60-7a02-4c41-ae16-d386fee90789)
+<br>
+
+![image](https://github.com/user-attachments/assets/d37d0e4b-91eb-40d7-96a8-f71244eedd41)
+<br>
+
+![image](https://github.com/user-attachments/assets/fc495db7-230f-4e6a-b09d-ad4e7bc68110)
+<br>
+
+![image](https://github.com/user-attachments/assets/b952b42a-83ef-4d9f-8521-e714adf352ab)
+<br><br>
+
+## ⚙️ İletişim Paneli
+
 
