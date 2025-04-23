@@ -374,6 +374,42 @@ Iletisim partial sayfasında bir tane form oluşturup metodunu post olarak belir
 
 <hr>
 
+# 🖥️ Bölüm 4: Admin Teması
+
+Tema linki: https://themewagon.com/themes/adminlte-free-bootstrap-3-html5-admin-panel-template/ <br><br>
+
+![image](https://github.com/user-attachments/assets/8bb47d48-4365-42f3-9f85-ee41bbf28d4c)
+<br><br>
+
+## ⚙️ Layout Panelinin Düzenlenmesi
+Burada ilk olarak Shared klasörüne bir tane _AdminLayout oluşturmuştuk. Bunun üzerinden gideceğiz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d879f27a-3b0f-4784-9b6b-3fb60cd7f793)
+<br>
+Sırayla işlemlerimizi yapıyoruz. İlk olarak HakkimdaController isminde bir tane Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4768169e-4e14-466b-90d2-ba2cc5fc4056)
+<br>
+Index üzerinden bir View oluşturup _AdminLayout sayfasını kullanacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/705fe061-efa3-4f7f-aab3-97fba84324e4)
+<br>
+Buradan Shared klasörü üzerinden _AdminLayout sayfasını seçiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/50f1f8bc-551b-4a64-aad0-83ab5f009421)
+<br>
+İşlemler tamamlandıktan sonra Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a59a61bf-9c85-4deb-bf37-cd284b0d5ebe)
+<br>
+Admın temayı katmanımıza atıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/04a7b7ea-abb7-4355-bbf4-1b0d56718fc4)
+<br>
+_AdminLayout sayfasına örnek kod olarak pages klasörüne ait olan examples klasörüne gelip project-add.html içerisindeki kodları kopyalayıp _AdminLayout sayfasına yapıştırıyoruz. Hata vermemesi için 
+geçici olarak en alt sayfaya @RenderBody metodunu ekledik.<br><br>
+
+
 
 
 
