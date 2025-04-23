@@ -224,4 +224,101 @@ Burada bir tane foreach döngüsü oluşturuyoruz. About kısmı section etiketl
 <br>
 İsim burada çıkmış oldu.<br><br>
 
+## ⚙️ Partial View Kullanımı
+
+"Partial View" terimi, genellikle ASP.NET MVC veya Razor Pages projelerinde kullanılan bir kavramdır. Türkçesiyle "Kısmi Görünüm", bir web sayfasının tekrar kullanılabilir parçasıdır. Ana amaç, ortak kullanıcı arayüzü bileşenlerini tek bir yerde tanımlayıp, farklı sayfalarda kullanabilmektir.<br><br>
+
+### ✔️ Partial View Nedir?
+ASP.NET MVC'de, bir view dosyasının (örneğin .cshtml) parçası olarak tanımlanan, başka view'lar içinde kullanılabilen bir yapıdır.<br>
+Örneğin: Navigasyon menüsü, footer, kullanıcı profil kutusu gibi bileşenler için idealdir.<br><br>
+
+### 🗒️ Ne Zaman Kullanılır?
+Aynı HTML bileşenini birçok yerde göstermek gerektiğinde.<br>
+Sayfaların belirli kısımlarını modüler hale getirmek istendiğinde.<br>
+Sayfa yapısını sade ve okunabilir tutmak için.<br><br>
+
+![image](https://github.com/user-attachments/assets/d63032ef-d75e-4892-8669-7d99a6877e69)
+<br>
+DefaultController'a gidiyoruz ve Deneyim isminde bir tane PartialView oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a7cef078-83f2-45b7-b7eb-e7fd0d0185e4)
+<br>
+Ardından Deneyim'e sağ tıklayıp bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f80709fa-20c9-48bb-830e-341440fb0621)
+<br>
+Burada bir partial view oluşturmak için Create as a partial view kısmını seçili hale getiriyoruz ve Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1842e8d2-08e8-4915-92a7-28def9132080)
+<br>
+Partial View bu şekilde hazırlanmış oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/2ca79c4d-40f7-4427-b02c-fbdb2ef486cc)
+<br>
+Örnek bir Partial View kullanımı bu şekildedir. Burada Html.PartialView dedikten sonra DefaultController'da oluşturduğumuz Deneyim isminde PartialView'i buraya yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3f6f4007-8c9c-4e5c-982d-82d52b8c5143)
+<br>
+Deneyim partial view'e geldiğimizde örnek olması açısından bir yazı yazdık.<br><br>
+
+![image](https://github.com/user-attachments/assets/1501f52d-8921-4254-b89a-9469869dfceb)
+<br>
+Partial View bu şekilde çağırılmış oldu.<br><br>
+
+## ⚙️ Deneyimleri Listeleme
+
+![image](https://github.com/user-attachments/assets/2c345191-d13a-4674-9dba-8f801a667ea3)
+<br>
+Burada Deneyim kısmını Partial View haline getirmek için 74. satırda yer alan div class içerisindeki resume-section-content olan kısmın sol tarafındaki ok sembolüne tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/13471f4d-201f-4960-8d5e-757c24fbb640)
+<br>
+Görünümü küçültmüş olduk. Buradaki küçülttüğümüz kodu kesip Deneyim.html sayfasına yapıştırıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9bcf97a5-852a-47cf-a5dc-366a8889c230)
+<br>
+Deneyim.html sayfasındaki kodları buraya aktarmış olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/46664d83-0de6-4808-9bd4-4b3201e1b75d)
+<br>
+Ardından kestiğimiz kodları bu kez Html.Partial("Deneyim") içerisine aktarıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1aa655fb-06f6-47b5-bb15-64884a9e420b)
+<br>
+Deneyimler bu şekilde karşımıza çıkmış oldu. Şimdi burada kendi deneyimlerimizi ekliyor olacağız. Burada toplamda 4 tane deneyim yer almaktadır. Biz bunlardan sadece birini kullanıyor olacağız. Bunun için foreach döngüsüne ihtiyacımız olacak.<br><br>
+
+![image](https://github.com/user-attachments/assets/76c7db2d-0639-4cbd-9eef-30a3201748d6)
+<br>
+Sileceğimiz kod kısımlarını küçülterek göstermiş olduk. Burada sadece bir tanesini kullanacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/7fe314a3-e93e-4723-969b-1c400ee632ef)
+<br>
+DefaultController'a gelip deneyimleri listeleyecek kodu yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f4cb16d6-3f3a-4100-b5e9-ca008cd3665a)
+<br>
+Modelimizi ve foreach döngümüzü oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/a72d3f8a-2fa5-4841-9ed2-adff552bb909)
+<br>
+Çalıştırdığımız zaman hata verecektir. Index.html sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/760cf6da-3146-4e7e-8723-62d3995ea723)
+<br>
+Burada Html.Partial olan kısmını Html.Action olarak değiştiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/394dda91-b9c0-4cec-a628-ebe741668c0a)
+<br>
+Sayfamız bu şekilde gelmiş oldu. Buraya kendi deneyimlerimizi ekliyoruz.<br><br>
+
+⚠️ Partial View'de eğer statik bir yapıysa Partial kullanabiliriz, ancak dinamik bir yapıysa, yani bu kez birkaç farklı tablodan tek bir View sayfası üzerinde veri getirmeye çalışırsak bu kez Action kullanırız.<br><br>
+
+![image](https://github.com/user-attachments/assets/569a7f8e-70b4-4ff8-989c-be61366946b7)
+<br>
+Deneyim.html sayfasını bu şekilde değiştirmiş olduk. Programı çalıştırırken Index.html üzerinden çalıştırmamız gerekecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/954072e9-e149-4d06-ba7b-c3261d354243)
+<br>
+Sayfamız bu şekilde hazırlanmış oldu. Diğer alanlar için de (Eğitimlerim, Sertifikalarım vs...) aynı şekilde uygulanacaktır.<br><br>
+
 
