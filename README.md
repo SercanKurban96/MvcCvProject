@@ -520,4 +520,12 @@ Index sayfasına da silme işleminde olduğu gibi DeneyimGetir metoduna ait olan
 <br>
 Deneyim düzenleme sayfasını bu şekilde tasarladık.<br><br>
 
+![image](https://github.com/user-attachments/assets/e4116aa5-0bd1-44c5-b327-228bdf3911dc)
+<br>
+Deneyim getirme ve güncelleme işlemleri bu şekilde olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/55060cba-944e-4955-8612-58649a25a7c3)
+<br>
+DeneyimGetir sayfasında ise form methodunu Post olarak ayarladık.<br><br>
+
 
