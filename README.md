@@ -536,7 +536,72 @@ DeneyimGetir sayfasında ise form methodunu Post olarak ayarladık.<br><br>
 <br>
 YetenekController isminde bir tane Controller oluşturuyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/0a2be481-700f-4c61-95f1-083bbcda303c)
+<br>
+Listeleme işlemini bu şekilde yapıyoruz ve Index oluşturuyoruz.<br><br>
+
 ![image](https://github.com/user-attachments/assets/4233dda2-7c2c-435c-85e8-34e18dade471)
 <br>
 Burada örnek olarak ilgili template'e gelip pages klasörüne ait olan tables klasörüne geliyoruz. Oradan simple.html sayfasına gidiyoruz. YetenekIndex olarak metin belgesi projede yer almaktadır.<br><br>
+
+![image](https://github.com/user-attachments/assets/8319dd41-d1b1-4300-91ad-56bc50b126dd)
+<br>
+SQL'e gelip TblYeteneklerim tablosuna Oran isminde yeni bir sütun ekliyoruz ve veri tipini tinyint olarak belirliyoruz. Şimdi bu değeri modelimize yansıtalım.<br><br>
+
+![image](https://github.com/user-attachments/assets/092854d1-2798-4e7b-af23-1335230beab1)
+<br>
+Models klasörüne gelip oluşturduğumuz Entity klasörüne ait olan modelimize tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/73be4a52-73d9-4311-abf7-0e173b91ff0f)
+<br>
+Herhangi bir alana sağ tıklayıp Update Model from Database diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6291aa10-589f-4a6e-b339-fe85baa92097)
+<br>
+Karşımıza bu şekilde çıkacaktır. Direkt Finish diyoruz ve kaydediyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a8acbcc2-3f73-478a-9d12-fe73931425e0)
+<br>
+YetenekController Index sayfasını bu şekilde oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5f87200d-6646-4f06-9c6f-7092cfb5f1c0)
+<br>
+Değerlerimizi bu şekilde belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/0850b7ff-eb92-4c32-8530-39cd46d0485e)
+<br>
+Progress bar çubuğunda ve labellarda şartlı renklendirme işlemi için en üst kısmına gelip string türünden renk ve labelrenk isminde değişkenlerimizi oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2e79904c-a6ae-45ca-a863-cb061ff8736b)
+<br>
+Ardından foreach döngüsünün hemen altına if şartlarımızı belirliyoruz. En sonda div class'ımıza @renk ve @labelrenk atamaları yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e87eaed9-2e33-4ab6-aff8-1e325c6bacbe)
+<br>
+Progress bar çubukların renkleri ve labelların renkleri oranlara göre belirlenmiştir.<br><br>
+
+![image](https://github.com/user-attachments/assets/a4647560-1859-4bd7-a1bf-5ff965049982)
+<br>
+Yetenek ekleme işlemi bir öncekinde yaptığımız deneyim ekleme işleminde olduğu gibidir.<br><br>
+
+![image](https://github.com/user-attachments/assets/0daef653-dc87-446f-bf8f-6d4d7547cbea)
+<br>
+YeniYetenek sayfası bu şekilde oluşturuldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/7b24ea8a-d2ec-4ab0-b628-38bd0d1e9297)
+<br>
+
+![image](https://github.com/user-attachments/assets/bd4f3ee2-8627-43e6-bbdb-0fbe9d122f31)
+<br>
+Ekleme işlemi bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/e70b5227-87bf-49e8-840a-b55cd0c182ff)
+<br>
+Silme ve düzenleme işlemleri Controller'da bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/11f1cf70-da74-463c-b731-3a1e07f92c33)
+<br>
+Yetenek düzenleme sayfası bu şekildedir.<br><br>
+
+<hr>
 
