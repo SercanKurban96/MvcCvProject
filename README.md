@@ -476,6 +476,48 @@ Ekran çıktısı bu şekildedir.<br><br>
 <br>
 Ekleme işlemi bu şekilde olacaktır. Ardından DeneyimEkle'ye tıklayıp yeni bir View oluşturuyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/d0f322e0-79cb-4006-ab85-651d5d3316fe)
+<br>
+DeneyimEkle sayfasını bu şekilde oluşturduk.<br><br>
 
+![image](https://github.com/user-attachments/assets/bedff738-4f1e-4346-9869-fc4ec9de0bae)
+<br>
+Ekran çıktısı bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/82c7baba-56b5-408b-ba52-e1c8a626a34f)
+<br>
+Örnek bir veri girişi yapalım.<br><br>
+
+![image](https://github.com/user-attachments/assets/9dff7271-62be-4ca7-94d7-4cad791cd4a7)
+<br>
+Veri girişimiz bu şekilde oluşturuldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/6ec6bc6b-d477-47e6-9767-435973d71828)
+<br>
+Silme işleminden önce GenericRepository'e gidiyoruz ve silinecek olan değeri bulan metotu ekliyoruz. Burada LINQ sorgusu olan Expression'u kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2ca16086-8fe2-4359-b692-7838b668e2cc)
+<br>
+DeneyimController'a gelip silme metodunu uyguluyoruz, <strong>ancak burada herhangi bir View oluşturmuyoruz!</strong><br><br>
+
+![image](https://github.com/user-attachments/assets/0e9a7d4b-24c3-4552-adcc-275e4b4b5064)
+<br>
+Index sayfasına gelip DeneyimSil metoduna ait olan adresi ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/159a288d-6ce0-492b-8f3d-0e79bdfc6ec3)
+<br>
+Buradan ID 2 olan değeri sildiğimiz zaman silme işlemi başarılı bir şekilde uygulanacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/f328e42d-d33a-450d-80d2-5066deb0c104)
+<br>
+Deneyim geitrme işlemi için HttpGet metodunu kullanıyoruz ve ID değerini bulduruyoruz. Ardından View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/7f00778d-bdc1-4888-b507-0104e719e962)
+<br>
+Index sayfasına da silme işleminde olduğu gibi DeneyimGetir metoduna ait olan adresi ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/a86e127c-dec9-45ea-b764-d508f67b14ab)
+<br>
+Deneyim düzenleme sayfasını bu şekilde tasarladık.<br><br>
 
 
