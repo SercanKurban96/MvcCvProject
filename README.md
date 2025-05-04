@@ -528,4 +528,15 @@ Deneyim getirme ve güncelleme işlemleri bu şekilde olacaktır.<br><br>
 <br>
 DeneyimGetir sayfasında ise form methodunu Post olarak ayarladık.<br><br>
 
+<hr>
+
+# 🖥️ Bölüm 6: Admin Temasında CRUD İşlemleri
+
+![image](https://github.com/user-attachments/assets/2f59035e-b389-4ebb-ae7d-23fb0643eb40)
+<br>
+YetenekController isminde bir tane Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4233dda2-7c2c-435c-85e8-34e18dade471)
+<br>
+Burada örnek olarak ilgili template'e gelip pages klasörüne ait olan tables klasörüne geliyoruz. Oradan simple.html sayfasına gidiyoruz. YetenekIndex olarak metin belgesi projede yer almaktadır.<br><br>
 
