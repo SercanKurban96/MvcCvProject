@@ -421,6 +421,60 @@ HakkimdaController'a ait Index üzerinden örnek bir tablo oluşturduk.<br><br>
 <br>
 Sayfanın görünümünü daha düzgün hale getirmek için _AdminLayout'a gelip RenderBody'den önce bir div oluşturuyoruz.<br><br>
 
+<hr>
+
+# 🖥️ Bölüm 5: Repository Design Pattern
+
+Repository Design Pattern (Depo Tasarım Deseni), yazılım geliştirmede kullanılan bir mimari desendir. Veritabanı işlemlerini (CRUD: Create, Read, Update, Delete) soyutlamak için kullanılır. Amaç, veri erişim mantığını uygulama mantığından ayırmaktır. Bu desen sayesinde kod daha okunabilir, sürdürülebilir ve test edilebilir hale gelir.<br><br>
+
+![image](https://github.com/user-attachments/assets/21985615-02ab-48ef-80e7-2018d5d00fe2)
+<br>
+Katmanımıza Repositories isminde yeni bir klasör oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e993cb47-6544-40e3-bf03-c7ad5e9bb198)
+<br>
+Ardından Repositories klasörüne sağ tıklayıp GenericRepository isminde yeni bir class oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/8fd832d3-6772-48d6-b735-9fce03cbf2bf)
+<br>
+Burada tek bir repository içinde bütün CRUD işlemlerini yapacağız. Bunun için GenericRepository sınıfın içerisine T değerini ekliyoruz. Bu T değeri göndereceğimiz sınıflar olacaktır. Ardından where şartı ekleyip T:class olarak ekliyoruz ve new komutunu ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9ca07c67-d502-4040-bd5f-a9c32dc32889)
+<br>
+
+CRUD işlemleri bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/090a09d4-eb9a-474f-b85c-5ef543079d66)
+<br>
+GenericRepository'den CRUD işlemlerini tamamladıktan sonra diğer işlemlerimiz için (DeneyimRepository, YeteneklerimRepository...) tek tek oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/70043b3b-5f19-467c-af33-358fb99d1927)
+<br>
+Burada örnek olarak DeneyimRepository oluşturduk. Buradan GenericRepository'den miras aldıktan sonra içerisine TblDeneyimlerim ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d6932af2-fad9-4658-9ff2-da5f2552168b)
+<br>
+Repositoryleri tanımladıktan sonra DeneyimController oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d126e8b4-8711-4351-bd10-4f792b05bc4e)
+<br>
+Oluşturduğumuz DeneyimRepository'i buraya çağırıyoruz ve ilk olarak listeleme işlemini yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/907c444d-c829-45d3-be39-bb675739571d)
+<br>
+Ardından Index'e sağ tıklayıp View oluşturuyoruz ve _AdminLayout sayfasını kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1c179021-e5ad-4034-9f4f-2bcffbb522f0)
+<br>
+Index sayfasını bu şekilde oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/9fbc5bfc-6bd7-4b81-a0ff-551b07843c44)
+<br>
+Ekran çıktısı bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/1ecd08e7-9b92-4ecd-b99e-7a0886e9f90c)
+<br>
+Ekleme işlemi bu şekilde olacaktır. Ardından DeneyimEkle'ye tıklayıp yeni bir View oluşturuyoruz.<br><br>
 
 
 
