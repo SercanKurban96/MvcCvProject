@@ -409,6 +409,8 @@ Admın temayı katmanımıza atıyoruz.<br><br>
 _AdminLayout sayfasına örnek kod olarak pages klasörüne ait olan examples klasörüne gelip project-add.html içerisindeki kodları kopyalayıp _AdminLayout sayfasına yapıştırıyoruz. Hata vermemesi için 
 geçici olarak en alt sayfaya @RenderBody metodunu ekledik.<br><br>
 
+AdminLayout düzenlenmiş hali projenin metin belgesinde yer almaktadır.<br><br>
+
 
 
 
