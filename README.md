@@ -411,6 +411,15 @@ geçici olarak en alt sayfaya @RenderBody metodunu ekledik.<br><br>
 
 AdminLayout düzenlenmiş hali projenin metin belgesinde yer almaktadır.<br><br>
 
+## Örnek Tablo Kullanımı
+
+![image](https://github.com/user-attachments/assets/0277e9b7-7555-4b7e-bc67-e51961e4ed85)
+<br>
+HakkimdaController'a ait Index üzerinden örnek bir tablo oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/453fe715-cd4f-4c83-bbb7-68a3a0b5421c)
+<br>
+Sayfanın görünümünü daha düzgün hale getirmek için _AdminLayout'a gelip RenderBody'den önce bir div oluşturuyoruz.<br><br>
 
 
 
