@@ -9,8 +9,7 @@
 📌 MVC kullanılmıştır.<br>
 📌 Veri tabanı olarak MSSQL kullanılmıştır.<br>
 📌 ORM aracı olarak Entity Framework, geliştirme yaklaşımı olarak Db First kullanılmıştır.<br>
-📌 Admin tarafı olacaktır.<br>
-📌 Üç ayrı tema kullanılacaktır.<br><br>
+📌 Admin, kullanıcı girişi ve Cv sitesi olmak üzere üç ayrı tema kullanılacaktır.<br><br>
 
 <hr>
 
