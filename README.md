@@ -708,4 +708,26 @@ SertifikaController Index sayfasında yer alan kodlar projenin içerisindedir.<b
 <br>
 SQL'e gelip TblSertifikalarim tablosuna Tarih isminde yeni bir sütun ekliyoruz ve modelimize yansıtıyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/972d25c5-6f87-4969-81fc-5d8aec07ca8e)
+<br>
+Sertifika listeleme, ekleme ve silme işlemi...<br><br>
+
+![image](https://github.com/user-attachments/assets/3be353f3-3871-41ac-a8af-5a9914a691ad)
+<br>
+Sertifika düzenleme işlemi...<br><br>
+
+![image](https://github.com/user-attachments/assets/8bc0de07-c0c1-4cbc-8f9b-b2bd0bcb56f0)
+<br>
+YeniSertifika sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/c8b158ad-8cd4-4972-a3c4-53f87f873c9f)
+<br>
+Sertifika düzenleme sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/dfe896fa-bc41-442a-afa9-5603ea6fd7fc)
+<br>
+IletisimController oluşturuyoruz.<br><br>
+
+Iletisim'e ait Index kısmındaki kodlar projenin içerisinde yer almaktadır.<br><br>
+
 
