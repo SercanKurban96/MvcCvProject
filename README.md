@@ -9,8 +9,7 @@
 📌 MVC kullanılmıştır.<br>
 📌 Veri tabanı olarak MSSQL kullanılmıştır.<br>
 📌 ORM aracı olarak Entity Framework, geliştirme yaklaşımı olarak Db First kullanılmıştır.<br>
-📌 Admin tarafı olacaktır.<br>
-📌 Üç ayrı tema kullanılacaktır.<br><br>
+📌 Admin, kullanıcı girişi ve Cv sitesi olmak üzere üç ayrı tema kullanılacaktır.<br><br>
 
 <hr>
 
@@ -604,4 +603,109 @@ Silme ve düzenleme işlemleri Controller'da bu şekildedir.<br><br>
 Yetenek düzenleme sayfası bu şekildedir.<br><br>
 
 <hr>
+
+# 🖥️ Bölüm 7: Eğitim İşlemleri ve Validation Kontrolleri
+
+![image](https://github.com/user-attachments/assets/39cd173c-9aba-4d6e-ad8d-3b1bf0ded837)
+<br>
+İlk olarak EgitimController isminde yeni bir Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/0deeae75-ae9b-4ee0-b45e-c8dd802449bb)
+<br>
+Repomuzu buraya çağırıyoruz ve listeleme işlemini oluşturduktan sonra Index'e sağ tıklayıp View ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/f6b85335-c47d-4663-a4fd-a8ec95775658)
+<br>
+Index'imizi bu şekilde oluşturduk. Daha önce yaptığımız Deneyim tarafında yer alan Index'e benzer bir yapıda oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/8ad49b4e-4316-4741-b350-8209587e39d5)
+<br>
+Ekleme işlemini şimdilik bu şekilde oluşturduk. EgitimEkle'ye sağ tıklayıp yeni bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2d3f13d8-38e5-44e6-b9fa-5ee92e34013e)
+<br>
+EgitimEkle formumuzu bu şekilde oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/ea5c152e-237d-4e37-b35e-0d599195d217)
+<br>
+Yeni Eğitim Ekle butonumuza tıklıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/4304afc6-1689-42ef-b705-b1a7568c1be3)
+<br>
+Buraya hiçbir veri girişi yapmadan direkt Kaydet diyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/fc1d87a4-e06a-4a40-a04d-aec75095886f)
+<br>
+Gördüğünüz üzere hiçbir veri girişi yapmadan direkt veriyi kaydetmiş oldu, ancak bu bizim istediğimiz bir durum değil. Burada validation (doğrulama) işlemlerimizi yapacağız. Örnek olarak veri girişi yapılmazsa veya girilen karakter sayısı az ise veriyi eklemeden bir uyarı mesajı vermesini sağlayacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/ff38ad4b-f86a-43a7-a551-a469518ff331)
+<br>
+Burada Models klasörüne giderek üzerinde çalışmış olduğumuz TblEgitimlerim sayfasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5cae38dd-8c60-440d-8195-bf5393ae0f29)
+<br>
+TblEgitimlerim sayfası bu şekilde karşımıza çıkacaktır. Burada bir validation işlemi uygulayalım.<br><br>
+
+![image](https://github.com/user-attachments/assets/6d6d3add-cc22-4e78-925d-ca205de7ea62)
+<br>
+Burada örnek olarak Baslik değerini boş geçmemek için hemen üzerine [Required] ifadesini kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/785fb0cc-5d70-4356-8d93-0ca3aeeb02ba)
+<br>
+Tekrardan Yeni Eğitim Ekle butonuna basalım ve hiçbir veri girişi yapmadan direkt Kaydet diyelim.<br><br>
+
+![image](https://github.com/user-attachments/assets/8d9f764d-1942-4b0d-b18f-f33d8750de63)
+<br>
+Gördüğünüz üzere direkt hata ekranı karşımıza çıktı, ama bu hatayı görmek yerine kendimiz hata mesajı oluşturup o hatayı ekranda görebiliriz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6d40be50-d29a-4f09-9de2-a5f3cd62bcb1)
+<br>
+Burada ilk olarak Validation geçerliliğini sağlamak için ModelState oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/45ba24bd-8184-407e-8d2e-e2647380592b)
+<br>
+Ardından Models klasöründe yer alan TblEgitimlerim sayfasına gidip bu kez Required alanından sonra hata mesajı oluşturmak için ErrorMessage komutunu kullanıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/cca8831f-adc2-4306-92fb-8b38a22dffc9)
+<br>
+EgitimEkle sayfasına gelip bu kez ValidationMessageFor komutunu ekliyoruz. Burada önce Baslik değerini, ikinci değeri ise boş bırakıyoruz. Index üzerinden programımızı çalıştıralım.<br><br>
+
+![image](https://github.com/user-attachments/assets/5b0861c1-35ba-40a9-a958-7cccaa5a029d)
+<br>
+Kaydet butonuna basalım.<br><br>
+
+![image](https://github.com/user-attachments/assets/411bcba6-50d3-4128-af1a-d292acb6b288)
+<br>
+Kaydet butonuna bastığımız zaman bize bir hata mesajı verdi. Böylece veriyi kaydetmemiş oldu. İstersek bu hata mesajının rengini değiştirebiliriz.<br><br>
+
+![image](https://github.com/user-attachments/assets/b0315959-ef67-4325-944e-56045d1950f4)
+<br>
+Renk değişikliği için kullanacağımız komut bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/477ac3b3-43c2-4666-8379-7d1371fd4636)
+<br>
+Bir diğer validation kontrolü ise karakter uzunluğu belirlemedir. Burada StringLength komutunu kullandıktan sonra örneğin 10 olarak belirlediğimiz zaman en fazla 10 karakterlik veri girişi yapabileceğimizi belirtmektedir. Aksi taktirde bize hata mesajını gösterecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/1714dfdd-93df-4f7d-893e-b01b4b22aef6)
+<br>
+Egitim silme ve düzenleme işlemleri...<br><br>
+
+![image](https://github.com/user-attachments/assets/bb4fb445-43b0-464f-bafb-028cb7c32269)
+<br>
+EgitimDuzenle sayfası...<br><br>
+
+<hr>
+
+# 🖥️ Bölüm 8: Sertifika Hobi ve İletişim Sayfaları
+
+![image](https://github.com/user-attachments/assets/3a4e9393-7b7c-4bae-bdef-079731a7bf51)
+<br>
+SertifikaController oluşturuyoruz ve Index sayfasına yeni bir View ekliyoruz.<br><br>
+
+SertifikaController Index sayfasında yer alan kodlar projenin içerisindedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/f47ab377-0801-4488-88be-68eb015baa5f)
+<br>
+SQL'e gelip TblSertifikalarim tablosuna Tarih isminde yeni bir sütun ekliyoruz ve modelimize yansıtıyoruz.<br><br>
+
 
