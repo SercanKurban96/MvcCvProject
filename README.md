@@ -696,4 +696,16 @@ EgitimDuzenle sayfası...<br><br>
 
 <hr>
 
+# 🖥️ Bölüm 8: Sertifika Hobi ve İletişim Sayfaları
+
+![image](https://github.com/user-attachments/assets/3a4e9393-7b7c-4bae-bdef-079731a7bf51)
+<br>
+SertifikaController oluşturuyoruz ve Index sayfasına yeni bir View ekliyoruz.<br><br>
+
+SertifikaController Index sayfasında yer alan kodlar projenin içerisindedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/f47ab377-0801-4488-88be-68eb015baa5f)
+<br>
+SQL'e gelip TblSertifikalarim tablosuna Tarih isminde yeni bir sütun ekliyoruz ve modelimize yansıtıyoruz.<br><br>
+
 
