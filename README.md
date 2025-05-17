@@ -728,6 +728,16 @@ Sertifika düzenleme sayfası...<br><br>
 <br>
 IletisimController oluşturuyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/c782f940-dbd6-44f4-a774-4f4ec6ea6832)
+<br>
+IletisimController'da sadece listeleme işlemi olacaktır.<br><br>
+
 Iletisim'e ait Index kısmındaki kodlar projenin içerisinde yer almaktadır.<br><br>
+
+![image](https://github.com/user-attachments/assets/1db734b1-5211-41b3-9ab3-562af65afa4e)
+<br>
+HobiController oluşturuyoruz.<br><br>
+
+Listeleme, ekleme, silme ve güncelleme işlemleri diğer Controller'da olduğu gibidir.<br><br>
 
 
