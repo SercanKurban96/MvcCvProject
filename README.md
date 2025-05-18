@@ -859,3 +859,6 @@ DefaultController'a gelip oluşturduğumuz SosyalMedya Partial'e bu kez bir şar
 <hr>
 
 # 🖥️ Bölüm 10: Login Formu
+
+Tema Linki: https://colorlib.com/wp/template/login-form-20/ <br><br>
+
