@@ -740,4 +740,89 @@ HobiController oluşturuyoruz.<br><br>
 
 Listeleme, ekleme, silme ve güncelleme işlemleri diğer Controller'da olduğu gibidir.<br><br>
 
+<hr>
+
+# 🖥️ Bölüm 9: Sosyal Medya Paneli
+
+![image](https://github.com/user-attachments/assets/6c320e5d-6459-420d-a741-b5db07ca54c9)
+<br>
+SQL'e gelip TblSosyalMedya isminde yeni bir tablo oluşturuyoruz. Burada sorgu yazarak bir tablo oluşturduk. Ardından modelimize yansıtıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/85286f59-5ce1-489a-8496-c1601fe2d8d3)
+<br>
+
+![image](https://github.com/user-attachments/assets/3914e33d-855a-4233-b784-5bbbf2dcfc92)
+<br>
+
+![image](https://github.com/user-attachments/assets/254e169a-f210-45e3-98cb-a63129197f99)
+<br>
+Oluşturduğumuz yeni tabloyu seçerek Finish diyoruz ve kaydediyoruz.<br><br>
+
+Sosyal medya işlemlerini yapmak için ilk oluşturduğumuz DefaultController'a gidiyoruz. Burada PartialView kullanacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/6dbdfc46-4726-4c50-b420-997dfc8f3a93)
+<br>
+SosyalMedya oluşturduktan sonra yeni bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/05da527b-f8b7-4980-849a-9cbb0b63839b)
+<br>
+Create as a partial view olanı seçtikten sonra Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/bdc6afd3-2847-4d14-a779-d2d726d0a92e)
+<br>
+Ardından DefaultController'da yer alan Index sayfasına gidip buradaki div class'ta yer alan social-icons'a ait bölümü kesiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/34d1da81-1a2d-4430-9edb-73398b7b5986)
+<br>
+Kestiğimiz yeri Html.Action kullanarak oluşturduğumuz partial view ismini yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d05c1959-3f6b-43e0-ae89-0152ea6eff4f)
+<br>
+SosyalMedya partial sayfasına yapıştırıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5f27c206-58f1-41a0-8374-c76441c23d8a)
+<br>
+Sosyal medya hesapları bu şekilde gelmiş oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/037c8a5b-31f4-484a-a0ff-b7226302a06d)
+SQL'e gelip Ikon isminde yeni bir sütun oluşturuyoruz ve modelimize yansıtıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/804a26f7-d17f-4868-8d94-9fb279fe33c3)
+<br>
+SQL'de birkaç veri girişi yaptıktan sonra SosyalMedya sayfasına bir foreach oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/50fda22b-ce92-4971-8e67-ac186f7a4b48)
+<br>
+Sosyal Medya hesaplarını bu şekilde eklemiş oldum.<br><br>
+
+![image](https://github.com/user-attachments/assets/9cfd8722-0e64-443e-baea-9d283415dc76)
+<br>
+Artık admin tarafında işlemlerimize devam edebiliriz. SosyalMedyaController isminde yeni bir Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6fc2e8de-85dc-4f2f-bf9c-ccc41aee2a50)
+<br>
+
+![image](https://github.com/user-attachments/assets/2d9e0d2c-1dea-4b60-84ac-d76132f28e93)
+<br>
+
+![image](https://github.com/user-attachments/assets/ef625746-70c4-47e8-aec2-49ae888878ff)
+<br>
+Burada YetenekController'da yer alan Index sayfasına ait tasarımımızı SosyalMedyaController'da yer alan Index sayfası gibi bir yapı oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/4916b4bd-29e3-40b0-a326-93b0efe00021)
+<br><br>
+
+Sosyal medya hesabı ekleme işlemini bu kez pop-up üzerinden yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3a196962-6dad-48b1-a099-51c671d357ff)
+<br>
+SosyalMedya Index sayfasında yetenek ekleme işleminde a href etiketine göre yapılıyordu. Burada pop-up kullanacağımız için button etiketini oluşturduk. Ardından data-toggle'a modal ve data-target ise kullanacağımız id değerini eklemiş olduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/da05a75e-bca0-41b9-bbb4-298b042c027e)
+<br>
+Aşağıda yer alan section etiketinin kapandığı yerin hemen altına pop-up işlemlerimizi bu şekilde yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2797ed13-91e2-49a3-853d-6a1640179298)
+<br>
+Pop-up görünümü bu şekildedir.<br><br>
 
