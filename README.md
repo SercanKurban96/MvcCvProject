@@ -816,13 +816,46 @@ Sosyal medya hesabı ekleme işlemini bu kez pop-up üzerinden yapıyoruz.<br><b
 
 ![image](https://github.com/user-attachments/assets/3a196962-6dad-48b1-a099-51c671d357ff)
 <br>
-SosyalMedya Index sayfasında yetenek ekleme işleminde a href etiketine göre yapılıyordu. Burada pop-up kullanacağımız için button etiketini oluşturduk. Ardından data-toggle'a modal ve data-target ise kullanacağımız id değerini eklemiş olduk.<br><br>
+SosyalMedya Index sayfasında yetenek ekleme işleminde a href etiketine göre yapılıyordu. Burada pop-up kullanacağımız için button etiketini oluşturduk.<br>
+İlk butona class atamasından sonra data-toggle ekliyoruz, data-toggle başlığı belirtir. Geçişi modal olacaktır.<br>
+Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br>
 
 ![image](https://github.com/user-attachments/assets/da05a75e-bca0-41b9-bbb4-298b042c027e)
 <br>
-Aşağıda yer alan section etiketinin kapandığı yerin hemen altına pop-up işlemlerimizi bu şekilde yapıyoruz.<br><br>
+Button tanımlamasından sonra div etiketleri içerisine ilk olarak modal isminde bir class tanımlıyoruz ve id değerini butonda tanımladığımız id değerini yazıyoruz.<br>
+Ardından ikinci div etiketinde bir tane modal-dialog oluşturuyoruz.<br>
+Üçüncü div etiketinde modal-content ile içeriğini oluşturuyoruz.<br>
+Burada modal-content tanımladıktan sonra modal-header ekleyerek bir başlık belirledik.<br>
+Ardından başlık için h2 etiketini kullanarak modal-title oluşturduk ve ismini Sosyal Medya Ekleme Penceresi olarak belirledik.<br>
+Sosyal Medya Ekleme Penceresi başlığındaki div etiketinden hemen sonra bir tane form etiketi oluşturduk.<br>
+Burada bir tane div tanımlaması yapıp modal-body oluşturduk.<br>
+Ardından label'a Sosyal Medya İsmi ismini vermiş olduk.<br>
+Sosyal Medya İsmi için bir tane TextBox ataması yapıyoruz. Burada input type türüne text, name kısmına geçici olarak Ad, class ise form-control olarak belirledik.<br><br>
 
 ![image](https://github.com/user-attachments/assets/2797ed13-91e2-49a3-853d-6a1640179298)
 <br>
 Pop-up görünümü bu şekildedir.<br><br>
 
+![image](https://github.com/user-attachments/assets/b266fa7a-5e24-4544-9f0b-a2ffd57a1a9e)
+<br>
+Sosyal medya düzenleme işlemi...<br><br>
+
+![image](https://github.com/user-attachments/assets/0d1eae24-c2a5-4a7c-88de-6d0d41864f83)
+<br>
+Sosyal medya düzenleme sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/6241f29a-ae1e-4d9b-8778-087e2242c1c5)
+<br>
+SQL'e gelip yeni bir sütun oluşturuyoruz. Burada sosyal medya hesabı silmek yerine aktif-pasif işlemini yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/755c3161-1dae-439c-ba21-03f954a8ffdc)
+<br>
+Burada silme işleminde durumu pasif hale getirirken, güncelleme işleminde ise aktif hale getiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1dc3e270-8c65-4dc3-9e6d-af580583611b)
+<br>
+DefaultController'a gelip oluşturduğumuz SosyalMedya Partial'e bu kez bir şart yazıyoruz. Buradaki şart, sadece aktif olan sosyal medya hesaplarını gösterecektir.<br><br>
+
+<hr>
+
+# 🖥️ Bölüm 10: Login Formu
