@@ -876,3 +876,67 @@ Oluşturacağımız bu View'da herhangi bir Layout oluşturmuyoruz.<br><br>
 
 Index üzerinden düzenlenmiş hali projenin içerisinde yer almaktadır.<br><br>
 
+## 🧰 Authorize Nedir?
+Kısaca: [Authorize], ASP.NET MVC ve ASP.NET Core’da kimliği doğrulanmamış (login olmamış) veya yetkisi yetersiz kullanıcıların belirli denetleyicilere (controller) ya da eylemlere (action) erişmesini engelleyen filtredir.<br><br>
+
+### 🗒️ Nasıl çalışır?
+1️⃣ İstek geldiğinde önce [Authorize] filtresi devreye girer.<br>
+2️⃣ Kullanıcı oturum açmamışsa, framework otomatik olarak login sayfasına (ya da tanımladığınız LoginPath’e) yönlendirir.<br>
+3️⃣ Oturum açık ama gerekli role/claim’e sahip değilse, HTTP 403 Forbidden döner ya da sizin belirlediğiniz hata sayfasına gider.<br><br>
+
+![image](https://github.com/user-attachments/assets/54e568ec-7031-4a87-95f5-49a847f10b79)
+<br>
+Burada örnek olarak EgitimController'da yer alan Index'in üzerine Authorize özelliğini ekleyelim ve projemizi herhangi bir sayfadan çalıştıralım.<br><br>
+
+![image](https://github.com/user-attachments/assets/66a18e7a-944f-4d5a-ab73-8037e0f286d5)
+<br>
+EgitimController'a ait Index sayfasına gittiğimiz zaman bize bu şekilde hata döndürecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/bfab7f98-514d-4688-a2cd-ec2b5cb44b66)
+<br>
+LoginController içerisindeki giriş işlemleri bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/343c678f-d9eb-488a-9ce6-c2c1e9a4e042)
+<br>
+Login Index sayfasına gelip form etiketinde yer alan method kısmını post olarak ayarlıyoruz ve kullanıcı adı ile şifreye ait olan inputlara da name ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/35c87406-cce8-49ae-9d6d-02c3d7c156da)
+<br>
+Giriş Yap butonuna bastıktan sonra Deneyim sayfasına atacaktır.<br><br>
+
+## Authorize Ayarı Nasıl Yapılır?
+
+![image](https://github.com/user-attachments/assets/3d331726-5b0d-4f86-af06-80015cb075c9)
+<br>
+Web.config dosyasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/45cabdfd-d5a3-4327-ba5f-7692c02c77c2)
+<br>
+Burada /system.web etiketinin kapanışından hemen önce kodlarımızı yazıyoruz.<br>
+Burada authentication etiketini kullanıp mode dedikten sonra Forms diyoruz. Burada Form bazında çalışıyoruz.<br>
+Forms etiketinden sonra loginUrl diyoruz. Sisteme giriş yaptığımız URL sayfası /Login/Index/ olarak belirliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e536d757-6154-49cd-9329-e58e3c6b8adb)
+<br>
+Örnek olarak EgitimController'da yer alan namespace kısmın hemen altına Authorize özelliğini eklersek sadece EgitimController'da yer alan tüm metotlarda geçerli olacaktır, diyelim ki 100 tane Controller olduğunu düşünelim. Hepsi için tek tek Authorize yazmak yerine tek bir yerden bütün Controller'a ekleyebiliriz.<br><br>
+
+![image](https://github.com/user-attachments/assets/badb9184-3221-4a72-96f4-45529c991913)
+<br>
+Burada Global.asax ismindeki sayfaya gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/71e63d32-ab49-4587-9528-55d88591fc5e)
+<br>
+Global.asax sayfasına gittiğimizde karşımıza bu şekilde çıkacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/cc7bf1da-3bff-4a30-8039-5ab5c93ebd02)
+<br>
+Yazacağımız komut bu şekildedir.<br><br>
+
+Herhangi bir sayfadan çalıştırdığımız zaman bu kez hiçbir sayfaya gitmemize izin vermeyecektir. Bunun için sadece LoginController üzerinden Index sayfasına giriş yapmamız gerekmektedir. Bu durumdan muaf tutmak için yapacağımız işlem şu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/5b5b389a-ec26-4c2c-bd49-084a4fb9c159)
+<br>
+Burada kullanacağımız özellik AllowAnonymous olacaktır. Aynı şekilde DefaultController için de AllowAnonymous ekliyoruz.<br><br>
+
+
+
