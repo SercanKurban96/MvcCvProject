@@ -938,5 +938,26 @@ Herhangi bir sayfadan çalıştırdığımız zaman bu kez hiçbir sayfaya gitme
 <br>
 Burada kullanacağımız özellik AllowAnonymous olacaktır. Aynı şekilde DefaultController için de AllowAnonymous ekliyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/0834528c-b8ec-4fbc-b98a-756cd550e422)
+<br>
+LoginController'da çıkış işlemi bu şekildedir.<br><br>
 
+![image](https://github.com/user-attachments/assets/c99d91fd-ab04-4647-8ddb-b7069e3e9f70)
+<br>
+Ekleyeceğimiz son Controller ise AdminController olacaktır.<br><br>
 
+![image](https://github.com/user-attachments/assets/ac6b49b3-4a95-4a11-acc9-eb9b0f91dbd5)
+<br>
+
+![image](https://github.com/user-attachments/assets/9c8a848e-d0b9-4971-abd8-460dadec173c)
+<br>
+
+![image](https://github.com/user-attachments/assets/2a56e237-287b-4964-b3f3-42a8f28da1ad)
+<br>
+
+![image](https://github.com/user-attachments/assets/7be9a209-b120-4a05-8e78-d386fc133e8c)
+<br>
+
+![image](https://github.com/user-attachments/assets/5bb7d783-4c26-4786-983a-c86de767298a)
+<br>
+AdminController'da listeleme, ekleme, silme ve düzenleme diğer Controller'da da olduğu gibidir.<br><br>
