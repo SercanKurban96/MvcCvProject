@@ -708,4 +708,256 @@ SertifikaController Index sayfasında yer alan kodlar projenin içerisindedir.<b
 <br>
 SQL'e gelip TblSertifikalarim tablosuna Tarih isminde yeni bir sütun ekliyoruz ve modelimize yansıtıyoruz.<br><br>
 
+![image](https://github.com/user-attachments/assets/972d25c5-6f87-4969-81fc-5d8aec07ca8e)
+<br>
+Sertifika listeleme, ekleme ve silme işlemi...<br><br>
 
+![image](https://github.com/user-attachments/assets/3be353f3-3871-41ac-a8af-5a9914a691ad)
+<br>
+Sertifika düzenleme işlemi...<br><br>
+
+![image](https://github.com/user-attachments/assets/8bc0de07-c0c1-4cbc-8f9b-b2bd0bcb56f0)
+<br>
+YeniSertifika sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/c8b158ad-8cd4-4972-a3c4-53f87f873c9f)
+<br>
+Sertifika düzenleme sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/dfe896fa-bc41-442a-afa9-5603ea6fd7fc)
+<br>
+IletisimController oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/c782f940-dbd6-44f4-a774-4f4ec6ea6832)
+<br>
+IletisimController'da sadece listeleme işlemi olacaktır.<br><br>
+
+Iletisim'e ait Index kısmındaki kodlar projenin içerisinde yer almaktadır.<br><br>
+
+![image](https://github.com/user-attachments/assets/1db734b1-5211-41b3-9ab3-562af65afa4e)
+<br>
+HobiController oluşturuyoruz.<br><br>
+
+Listeleme, ekleme, silme ve güncelleme işlemleri diğer Controller'da olduğu gibidir.<br><br>
+
+<hr>
+
+# 🖥️ Bölüm 9: Sosyal Medya Paneli
+
+![image](https://github.com/user-attachments/assets/6c320e5d-6459-420d-a741-b5db07ca54c9)
+<br>
+SQL'e gelip TblSosyalMedya isminde yeni bir tablo oluşturuyoruz. Burada sorgu yazarak bir tablo oluşturduk. Ardından modelimize yansıtıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/85286f59-5ce1-489a-8496-c1601fe2d8d3)
+<br>
+
+![image](https://github.com/user-attachments/assets/3914e33d-855a-4233-b784-5bbbf2dcfc92)
+<br>
+
+![image](https://github.com/user-attachments/assets/254e169a-f210-45e3-98cb-a63129197f99)
+<br>
+Oluşturduğumuz yeni tabloyu seçerek Finish diyoruz ve kaydediyoruz.<br><br>
+
+Sosyal medya işlemlerini yapmak için ilk oluşturduğumuz DefaultController'a gidiyoruz. Burada PartialView kullanacağız.<br><br>
+
+![image](https://github.com/user-attachments/assets/6dbdfc46-4726-4c50-b420-997dfc8f3a93)
+<br>
+SosyalMedya oluşturduktan sonra yeni bir View oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/05da527b-f8b7-4980-849a-9cbb0b63839b)
+<br>
+Create as a partial view olanı seçtikten sonra Add diyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/bdc6afd3-2847-4d14-a779-d2d726d0a92e)
+<br>
+Ardından DefaultController'da yer alan Index sayfasına gidip buradaki div class'ta yer alan social-icons'a ait bölümü kesiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/34d1da81-1a2d-4430-9edb-73398b7b5986)
+<br>
+Kestiğimiz yeri Html.Action kullanarak oluşturduğumuz partial view ismini yazıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/d05c1959-3f6b-43e0-ae89-0152ea6eff4f)
+<br>
+SosyalMedya partial sayfasına yapıştırıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/5f27c206-58f1-41a0-8374-c76441c23d8a)
+<br>
+Sosyal medya hesapları bu şekilde gelmiş oldu.<br><br>
+
+![image](https://github.com/user-attachments/assets/037c8a5b-31f4-484a-a0ff-b7226302a06d)
+SQL'e gelip Ikon isminde yeni bir sütun oluşturuyoruz ve modelimize yansıtıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/804a26f7-d17f-4868-8d94-9fb279fe33c3)
+<br>
+SQL'de birkaç veri girişi yaptıktan sonra SosyalMedya sayfasına bir foreach oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/50fda22b-ce92-4971-8e67-ac186f7a4b48)
+<br>
+Sosyal Medya hesaplarını bu şekilde eklemiş oldum.<br><br>
+
+![image](https://github.com/user-attachments/assets/9cfd8722-0e64-443e-baea-9d283415dc76)
+<br>
+Artık admin tarafında işlemlerimize devam edebiliriz. SosyalMedyaController isminde yeni bir Controller oluşturuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/6fc2e8de-85dc-4f2f-bf9c-ccc41aee2a50)
+<br>
+
+![image](https://github.com/user-attachments/assets/2d9e0d2c-1dea-4b60-84ac-d76132f28e93)
+<br>
+
+![image](https://github.com/user-attachments/assets/ef625746-70c4-47e8-aec2-49ae888878ff)
+<br>
+Burada YetenekController'da yer alan Index sayfasına ait tasarımımızı SosyalMedyaController'da yer alan Index sayfası gibi bir yapı oluşturduk.<br><br>
+
+![image](https://github.com/user-attachments/assets/4916b4bd-29e3-40b0-a326-93b0efe00021)
+<br><br>
+
+Sosyal medya hesabı ekleme işlemini bu kez pop-up üzerinden yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/3a196962-6dad-48b1-a099-51c671d357ff)
+<br>
+SosyalMedya Index sayfasında yetenek ekleme işleminde a href etiketine göre yapılıyordu. Burada pop-up kullanacağımız için button etiketini oluşturduk.<br>
+İlk butona class atamasından sonra data-toggle ekliyoruz, data-toggle başlığı belirtir. Geçişi modal olacaktır.<br>
+Ardından data-target ise bunun hedefini gösterir. İsmini #Modal1 olarak belirliyoruz.<br>
+
+![image](https://github.com/user-attachments/assets/da05a75e-bca0-41b9-bbb4-298b042c027e)
+<br>
+Button tanımlamasından sonra div etiketleri içerisine ilk olarak modal isminde bir class tanımlıyoruz ve id değerini butonda tanımladığımız id değerini yazıyoruz.<br>
+Ardından ikinci div etiketinde bir tane modal-dialog oluşturuyoruz.<br>
+Üçüncü div etiketinde modal-content ile içeriğini oluşturuyoruz.<br>
+Burada modal-content tanımladıktan sonra modal-header ekleyerek bir başlık belirledik.<br>
+Ardından başlık için h2 etiketini kullanarak modal-title oluşturduk ve ismini Sosyal Medya Ekleme Penceresi olarak belirledik.<br>
+Sosyal Medya Ekleme Penceresi başlığındaki div etiketinden hemen sonra bir tane form etiketi oluşturduk.<br>
+Burada bir tane div tanımlaması yapıp modal-body oluşturduk.<br>
+Ardından label'a Sosyal Medya İsmi ismini vermiş olduk.<br>
+Sosyal Medya İsmi için bir tane TextBox ataması yapıyoruz. Burada input type türüne text, name kısmına geçici olarak Ad, class ise form-control olarak belirledik.<br><br>
+
+![image](https://github.com/user-attachments/assets/2797ed13-91e2-49a3-853d-6a1640179298)
+<br>
+Pop-up görünümü bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/b266fa7a-5e24-4544-9f0b-a2ffd57a1a9e)
+<br>
+Sosyal medya düzenleme işlemi...<br><br>
+
+![image](https://github.com/user-attachments/assets/0d1eae24-c2a5-4a7c-88de-6d0d41864f83)
+<br>
+Sosyal medya düzenleme sayfası...<br><br>
+
+![image](https://github.com/user-attachments/assets/6241f29a-ae1e-4d9b-8778-087e2242c1c5)
+<br>
+SQL'e gelip yeni bir sütun oluşturuyoruz. Burada sosyal medya hesabı silmek yerine aktif-pasif işlemini yapıyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/755c3161-1dae-439c-ba21-03f954a8ffdc)
+<br>
+Burada silme işleminde durumu pasif hale getirirken, güncelleme işleminde ise aktif hale getiriyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/1dc3e270-8c65-4dc3-9e6d-af580583611b)
+<br>
+DefaultController'a gelip oluşturduğumuz SosyalMedya Partial'e bu kez bir şart yazıyoruz. Buradaki şart, sadece aktif olan sosyal medya hesaplarını gösterecektir.<br><br>
+
+<hr>
+
+# 🖥️ Bölüm 10: Login Formu
+
+Tema Linki: https://colorlib.com/wp/template/login-form-20/ <br><br>
+
+![image](https://github.com/user-attachments/assets/27ef773f-bd48-44f7-8294-fb1ebee65c27)
+<br>
+LoginController oluşturduktan sonra View ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e91e9369-4334-47d9-8598-5eca0700df8d)
+<br>
+Oluşturacağımız bu View'da herhangi bir Layout oluşturmuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2b88509a-798e-4952-bfd6-47501d72a185)
+<br>
+İndirdiğimiz tema dosyasını projemizin içerisine atıyoruz.<br><br>
+
+Index üzerinden düzenlenmiş hali projenin içerisinde yer almaktadır.<br><br>
+
+## 🧰 Authorize Nedir?
+Kısaca: [Authorize], ASP.NET MVC ve ASP.NET Core’da kimliği doğrulanmamış (login olmamış) veya yetkisi yetersiz kullanıcıların belirli denetleyicilere (controller) ya da eylemlere (action) erişmesini engelleyen filtredir.<br><br>
+
+### 🗒️ Nasıl çalışır?
+1️⃣ İstek geldiğinde önce [Authorize] filtresi devreye girer.<br>
+2️⃣ Kullanıcı oturum açmamışsa, framework otomatik olarak login sayfasına (ya da tanımladığınız LoginPath’e) yönlendirir.<br>
+3️⃣ Oturum açık ama gerekli role/claim’e sahip değilse, HTTP 403 Forbidden döner ya da sizin belirlediğiniz hata sayfasına gider.<br><br>
+
+![image](https://github.com/user-attachments/assets/54e568ec-7031-4a87-95f5-49a847f10b79)
+<br>
+Burada örnek olarak EgitimController'da yer alan Index'in üzerine Authorize özelliğini ekleyelim ve projemizi herhangi bir sayfadan çalıştıralım.<br><br>
+
+![image](https://github.com/user-attachments/assets/66a18e7a-944f-4d5a-ab73-8037e0f286d5)
+<br>
+EgitimController'a ait Index sayfasına gittiğimiz zaman bize bu şekilde hata döndürecektir.<br><br>
+
+![image](https://github.com/user-attachments/assets/bfab7f98-514d-4688-a2cd-ec2b5cb44b66)
+<br>
+LoginController içerisindeki giriş işlemleri bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/343c678f-d9eb-488a-9ce6-c2c1e9a4e042)
+<br>
+Login Index sayfasına gelip form etiketinde yer alan method kısmını post olarak ayarlıyoruz ve kullanıcı adı ile şifreye ait olan inputlara da name ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/35c87406-cce8-49ae-9d6d-02c3d7c156da)
+<br>
+Giriş Yap butonuna bastıktan sonra Deneyim sayfasına atacaktır.<br><br>
+
+## Authorize Ayarı Nasıl Yapılır?
+
+![image](https://github.com/user-attachments/assets/3d331726-5b0d-4f86-af06-80015cb075c9)
+<br>
+Web.config dosyasına gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/45cabdfd-d5a3-4327-ba5f-7692c02c77c2)
+<br>
+Burada /system.web etiketinin kapanışından hemen önce kodlarımızı yazıyoruz.<br>
+Burada authentication etiketini kullanıp mode dedikten sonra Forms diyoruz. Burada Form bazında çalışıyoruz.<br>
+Forms etiketinden sonra loginUrl diyoruz. Sisteme giriş yaptığımız URL sayfası /Login/Index/ olarak belirliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e536d757-6154-49cd-9329-e58e3c6b8adb)
+<br>
+Örnek olarak EgitimController'da yer alan namespace kısmın hemen altına Authorize özelliğini eklersek sadece EgitimController'da yer alan tüm metotlarda geçerli olacaktır, diyelim ki 100 tane Controller olduğunu düşünelim. Hepsi için tek tek Authorize yazmak yerine tek bir yerden bütün Controller'a ekleyebiliriz.<br><br>
+
+![image](https://github.com/user-attachments/assets/badb9184-3221-4a72-96f4-45529c991913)
+<br>
+Burada Global.asax ismindeki sayfaya gidiyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/71e63d32-ab49-4587-9528-55d88591fc5e)
+<br>
+Global.asax sayfasına gittiğimizde karşımıza bu şekilde çıkacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/cc7bf1da-3bff-4a30-8039-5ab5c93ebd02)
+<br>
+Yazacağımız komut bu şekildedir.<br><br>
+
+Herhangi bir sayfadan çalıştırdığımız zaman bu kez hiçbir sayfaya gitmemize izin vermeyecektir. Bunun için sadece LoginController üzerinden Index sayfasına giriş yapmamız gerekmektedir. Bu durumdan muaf tutmak için yapacağımız işlem şu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/5b5b389a-ec26-4c2c-bd49-084a4fb9c159)
+<br>
+Burada kullanacağımız özellik AllowAnonymous olacaktır. Aynı şekilde DefaultController için de AllowAnonymous ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/0834528c-b8ec-4fbc-b98a-756cd550e422)
+<br>
+LoginController'da çıkış işlemi bu şekildedir.<br><br>
+
+![image](https://github.com/user-attachments/assets/c99d91fd-ab04-4647-8ddb-b7069e3e9f70)
+<br>
+Ekleyeceğimiz son Controller ise AdminController olacaktır.<br><br>
+
+![image](https://github.com/user-attachments/assets/ac6b49b3-4a95-4a11-acc9-eb9b0f91dbd5)
+<br>
+
+![image](https://github.com/user-attachments/assets/9c8a848e-d0b9-4971-abd8-460dadec173c)
+<br>
+
+![image](https://github.com/user-attachments/assets/2a56e237-287b-4964-b3f3-42a8f28da1ad)
+<br>
+
+![image](https://github.com/user-attachments/assets/7be9a209-b120-4a05-8e78-d386fc133e8c)
+<br>
+
+![image](https://github.com/user-attachments/assets/5bb7d783-4c26-4786-983a-c86de767298a)
+<br>
+AdminController'da listeleme, ekleme, silme ve düzenleme diğer Controller'da da olduğu gibidir.<br><br>
