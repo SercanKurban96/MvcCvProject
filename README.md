@@ -862,3 +862,17 @@ DefaultController'a gelip oluşturduğumuz SosyalMedya Partial'e bu kez bir şar
 
 Tema Linki: https://colorlib.com/wp/template/login-form-20/ <br><br>
 
+![image](https://github.com/user-attachments/assets/27ef773f-bd48-44f7-8294-fb1ebee65c27)
+<br>
+LoginController oluşturduktan sonra View ekliyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/e91e9369-4334-47d9-8598-5eca0700df8d)
+<br>
+Oluşturacağımız bu View'da herhangi bir Layout oluşturmuyoruz.<br><br>
+
+![image](https://github.com/user-attachments/assets/2b88509a-798e-4952-bfd6-47501d72a185)
+<br>
+İndirdiğimiz tema dosyasını projemizin içerisine atıyoruz.<br><br>
+
+Index üzerinden düzenlenmiş hali projenin içerisinde yer almaktadır.<br><br>
+
