@@ -21,5 +21,53 @@ namespace MvcCvProject.Controllers
             var sertifika = repo.List();
             return View(sertifika);
         }
+
+        //Ekleme İşlemi
+        [HttpGet]
+        public ActionResult YeniSertifika()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniSertifika(TblSertifikalarim p)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("YeniSertifika");
+            }
+            repo.TAdd(p);
+            return RedirectToAction("Index");
+        }
+
+        //Silme İşlemi
+        public ActionResult SertifikaSil(int id)
+        {
+            var sertifika = repo.Find(x => x.ID == id);
+            repo.TDelete(sertifika);
+            return RedirectToAction("Index");
+        }
+
+        //Düzenleme İşlemi
+        [HttpGet]
+        public ActionResult SertifikaGetir(int id)
+        {
+            var sertifika = repo.Find(x => x.ID == id);
+            ViewBag.d = id;
+            return View(sertifika);
+        }
+
+        [HttpPost]
+        public ActionResult SertifikaGetir(TblSertifikalarim p)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("SertifikaGetir");
+            }
+            var sertifika = repo.Find(x => x.ID == p.ID);
+            sertifika.Aciklama = p.Aciklama;
+            sertifika.Tarih = p.Tarih;
+            repo.TUpdate(sertifika);
+            return RedirectToAction("Index");
+        }
     }
 }
