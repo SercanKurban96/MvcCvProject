@@ -5,11 +5,11 @@
 📍 Kullanılacak template: https://startbootstrap.com/theme/resume <br><br>
 
 ## Projeye ait içerikler;<br>
-📌 Tek katmandan oluşan dinamik bir CV projesi olacaktır.<br>
-📌 MVC kullanılmıştır.<br>
+📌 Tek katmandan oluşan dinamik bir CV projesidir.<br>
+📌 ASP.NET MVC5 kullanılmıştır.<br>
 📌 Veri tabanı olarak MSSQL kullanılmıştır.<br>
 📌 ORM aracı olarak Entity Framework, geliştirme yaklaşımı olarak Db First kullanılmıştır.<br>
-📌 Admin, kullanıcı girişi ve Cv sitesi olmak üzere üç ayrı tema kullanılacaktır.<br><br>
+📌 Admin, kullanıcı girişi ve Cv sitesi olmak üzere üç ayrı tema kullanılmıştır.<br><br>
 
 <hr>
 
